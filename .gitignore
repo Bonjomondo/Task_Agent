@@ -26,9 +26,15 @@ wheels/
 # Environment
 .env
 
-# Output directories
-output/
-!output/.gitkeep
+# Output directories (keep structure but ignore contents)
+output/*
+!output/logs/
+!output/papers/
+!output/generated/
+output/logs/*
+output/papers/*
+output/generated/*
+!output/**/.gitkeep
 
 # IDE
 .vscode/
