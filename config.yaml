@@ -1,0 +1,29 @@
+# Task Agent Configuration
+
+# AI Model Settings
+ai:
+  model: "gemini-pro"
+  temperature: 0.7
+  max_tokens: 4096
+  
+# Task Settings
+task:
+  max_retries: 3
+  timeout: 300
+  
+# Output Settings
+output:
+  base_dir: "output"
+  logs_dir: "output/logs"
+  papers_dir: "output/papers"
+  generated_dir: "output/generated"
+  formats:
+    - "md"
+    - "docx"
+    - "pdf"
+    
+# Logging Settings
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "output/logs/execution.log"
